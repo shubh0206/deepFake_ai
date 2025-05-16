@@ -1,0 +1,41 @@
+.deepfake-media-container {
+  position: relative;
+  display: inline-block;
+}
+
+.deepfake-detection-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1000;
+  background-color: #4a6bdf;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.deepfake-detection-btn:hover {
+  background-color: #3a56c0;
+}
+
+.deepfake-result {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.deepfake-result-real {
+  color: #6eb52f;
+}
+
+.deepfake-result-fake {
+  color: #ff4b4b;
+}

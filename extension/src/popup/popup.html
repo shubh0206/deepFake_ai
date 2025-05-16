@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deepfake Detector</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <img src="deep image.png" alt="Logo" class="logo">
+    <h1>Deepfake Detector</h1>
+    
+    <div class="status-container">
+      <div class="status-indicator" id="statusIndicator"></div>
+      <span id="statusText">Ready to analyze</span>
+    </div>
+
+    <button id="analyzePageBtn" class="analyze-btn">
+      Analyze Current Page
+    </button>
+
+    <div class="stats">
+      <div class="stat-item">
+        <span class="stat-value" id="imagesScanned">0</span>
+        <span class="stat-label">Images Scanned</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value" id="videosScanned">0</span>
+        <span class="stat-label">Videos Scanned</span>
+      </div>
+    </div>
+
+    <div class="settings">
+      <h3>Settings</h3>
+      <label>
+        <input type="checkbox" id="autoScanToggle"> Auto-scan new content
+      </label>
+      <label>
+        Confidence Threshold:
+        <input type="range" id="thresholdSlider" min="0.5" max="1" step="0.05" value="0.7">
+        <span id="thresholdValue">70%</span>
+      </label>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
